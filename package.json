@@ -1,0 +1,33 @@
+{
+  "name": "workspaces",
+  "version": "0.1.0",
+  "author": "lidengkai <lidengkai9487@163.com>",
+  "private": true,
+  "workspaces": [
+    "build/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "watch:react-web": "npm run watch:web -w build.react",
+    "watch:react-h5": "npm run watch:h5 -w build.react",
+    "dev": "npm run dev -ws --if-present",
+    "test": "npm run test -ws --if-present",
+    "prod": "npm run prod -ws --if-present"
+  },
+  "main": "",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/lidengkai/workspaces.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitee.com/lidengkai/workspaces/issues"
+  },
+  "homepage": "https://gitee.com/lidengkai/workspaces",
+  "engines": {
+    "node": ">= 15.0.0",
+    "npm": ">= 7.0.0"
+  }
+}
